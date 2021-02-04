@@ -1,0 +1,308 @@
+@media (max-width: 1199px) {
+  .header_logo p {
+    font-size: 25px;
+    padding-left: 5px;
+  }
+  .header_logo p br {
+    display: none;
+  }
+  .header_burger {
+    display: block;
+    width: 24px;
+    height: 18px;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+  }
+  .header_burger::before,
+  .header_burger::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    border-radius: 1px;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    transition: all 0.3s ease 0s;
+  }
+  .header_burger span {
+    background-color: black;
+    position: absolute;
+    border-radius: 1px;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 8px;
+    transition: all 0.3s ease 0s;
+  }
+  .contacts {
+    display: none;
+  }
+  .header_burger::before {
+    top: 0;
+  }
+  .header_burger::after {
+    bottom: 0;
+  }
+  .header_burger.active::before {
+    transform: rotate(45deg);
+    top: 8px;
+  }
+  .header_burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 8px;
+  }
+  .header_burger.active span {
+    transform: scale(0);
+  }
+  .header_menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 80px 10px 0px 10px;
+    transition: all 0.3s ease 0s;
+    overflow: auto;
+  }
+  .header_menu.active {
+    top: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header_list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .header_list li {
+    margin: 0px 0px 20px 0px;
+    font-size: 20px;
+  }
+
+  .banner {
+    margin-top: 80px;
+    background-size: cover;
+    height: 550px;
+    background-position: -70px 0;
+  }
+
+  .banner_call1 {
+    margin-top: 140px;
+    margin-left: 380px;
+    font-size: 20px;
+    width: 200px;
+  }
+
+  .banner_call2 {
+    margin-top: 250px;
+    margin-left: 430px;
+    font-size: 22px;
+    width: 270px;
+  }
+
+  .main_catalog {
+    width: 730px;
+  }
+
+  .content_info {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .content img {
+    width: 320px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .content_text {
+    width: 350px;
+  }
+
+  .content_text p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  footer {
+    width: 600px;
+  }
+
+  .footer_content {
+    width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    margin-top: 80px;
+    background-size: cover;
+    height: 400px;
+    background-position: -100px 0;
+  }
+
+  .banner_call1 {
+    margin-top: 70px;
+    margin-left: 170px;
+    font-size: 18px;
+  }
+
+  .banner_call2 {
+    margin-top: 200px;
+    margin-left: 220px;
+    font-size: 20px;
+    width: 240px;
+  }
+
+  .main_catalog {
+    width: 380px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .product > a {
+    width: 250px;
+    height: 250px;
+  }
+
+  .product img {
+    width: 200px;
+    padding: 0px;
+  }
+
+  .product {
+    margin: 10px 0;
+  }
+
+  .content_info {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .content img {
+    display: none;
+  }
+
+  .content_text {
+    width: 420px;
+    height: 420px;
+  }
+
+  .content:nth-child(1) .content_text {
+    background: url(../images/HTB1j95AQ9zqK1RjSZFH7623CpXaf.png);
+    background-size: cover;
+  }
+  .content:nth-child(2) .content_text {
+    background: url(../images/11inch-60v-3200W-Dual-Motor-Powerful-Anti-Skid-Shock-Absorber-Adult-Foldable-Electric-Scooter.jpg);
+    background-size: cover;
+  }
+  .content:nth-child(3) .content_text {
+    background: url(../images/3200.jpg_q50.jpg);
+    background-size: cover;
+  }
+  .content:nth-child(4) .content_text {
+    background: url(../images/scale_1200.jpg);
+    background-size: cover;
+  }
+  .content:nth-child(5) .content_text {
+    background: url(../images/sw5_08.jpg);
+    background-size: cover;
+  }
+  .content:nth-child(6) .content_text {
+    background: url(../images/MegaWheels-S1-colours-2-1024x1024.jpeg);
+    background-size: cover;
+  }
+  .content:nth-child(7) .content_text {
+    background: url(../images/11603634035ef0a30ce2e2b2.82596426-full.jpg);
+    background-size: cover;
+  }
+
+  .content_text p {
+    background: #d9ff00c0;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255);
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  footer {
+    width: 450px;
+  }
+
+  .footer_content {
+    width: 400px;
+  }
+
+  footer .line {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner_call1 {
+    margin-top: 70px;
+    margin-left: 100px;
+    font-size: 15px;
+    width: 170px;
+  }
+
+  .banner_call2 {
+    margin-top: 140px;
+    margin-left: 50px;
+    font-size: 18px;
+    width: 200px;
+  }
+  .header_logo p {
+    display: none;
+  }
+
+  .main_catalog {
+    width: 200px;
+  }
+
+  .product {
+    margin: 10px 0;
+  }
+
+  .product > a {
+    width: 200px;
+    height: 200px;
+  }
+
+  .product img {
+    width: 150px;
+  }
+
+  .content {
+    width: 290px;
+    margin: auto;
+  }
+
+  .content_text {
+    width: 270px;
+    height: 270px;
+  }
+
+  footer {
+    width: 300px;
+  }
+
+  .footer_content {
+    width: 280px;
+  }
+
+  .footer_menu a:nth-child(1) {
+    width: 25px;
+  }
+
+  .footer_menu a:nth-child(2) {
+    width: 105px;
+  }
+
+  .footer_menu a:nth-child(3) {
+    width: 90px;
+  }
+}

@@ -1,0 +1,113 @@
+main {
+    margin-top: 100px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 0 0 30px rgba(210, 255, 11, 0.205);
+}
+
+.description img {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-size: cover;
+    width: 600px;
+    margin: auto;
+}
+
+.description .product_description {
+    margin: 10px 20px 10px 20px;
+
+}
+
+.product_description p:first-child {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.product_description p:nth-child(2) {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    width:200px;
+    margin: auto;
+    background-color:rgb(210, 255, 11);
+    box-shadow: 0 0 10px rgba(210, 255, 11, 0.671);
+    margin-bottom: 20px;
+}
+
+.product_description table {
+    margin: auto;
+    /* background-color:rgba(210, 255, 11, 0.671); */
+    border: 1px double rgba(190, 190, 190, 0.253);
+}
+
+.product_description table td {
+    padding: 15px;
+    font-size: 18px;
+    border: 1px double rgb(210, 255, 11);
+}
+
+ 
+@media (max-width:1199px) {
+    .description {
+        width: 700px;
+    }
+    
+    .description img {
+        width: 300px;
+        height: 290px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .description {
+        width: 400px;
+        margin: auto;
+        flex-direction: column;
+    }
+    
+    .description img {
+        width: 380px;
+        height: 375px;
+        padding: 10px;
+        margin: auto;
+    }
+    
+  
+}
+
+@media (max-width: 480px) {
+    .description {
+        flex-direction: column;
+        width: 250px;
+        margin: auto;
+    }
+    
+    .description img {
+        width: 220px;
+        height: 220px;
+    }
+    
+.product_description table {
+    margin: auto;
+    /* background-color:rgba(210, 255, 11, 0.671); */
+    border: 1px double rgba(190, 190, 190, 0.253);
+}
+
+.product_description table td {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+    line-height: 18px;
+    font-variant: normal;
+    border: 1px double rgb(210, 255, 11);
+}
+    
+}
